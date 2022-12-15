@@ -24,6 +24,9 @@ public class Danny {
 			value = value * 256 + key.charAt(i);
 		}*/
 		int hash = key.hashCode();
+		if (hash < 0) {
+	         hash += 2147483648L;
+	      }
 		return hash % this.Size;
 	}
 	
@@ -117,6 +120,7 @@ public class Danny {
 					curr = curr.Next;
 				}
 			}
+//			System.out.print("\nResizing!\n");
 		}
 	}
 	
