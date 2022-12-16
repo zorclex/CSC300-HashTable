@@ -12,7 +12,7 @@ public class Main {
 			int r = gimmeRandom(0, 1000000); 	//big random numbers as keys
 			String s = Integer.toString(r);		//converted into string because we had a rough time understanding the assignment instructions
 			keyList[i] = s;
-			System.out.print(keyList[i] + " ");	//ALL the keys
+//			System.out.print(keyList[i] + " ");	//ALL the keys
 		}
 		System.out.println("\n=-=-=-=-=- keyList initialized =-=-=-=-=-");
 
